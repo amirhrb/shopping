@@ -1,0 +1,50 @@
+
+.itemDiv{
+    border: 0.5px solid #cecece;
+    border-radius:3px;
+    margin:20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.itemDiv a{
+    width: fit-content;
+}
+.itemDiv img{
+    width: 70px;
+}
+@media (max-width:640px){
+    .itemDiv{
+       width: 100%;
+    }
+    .itemDiv img{
+        width: 55px;
+    }
+}
+.buyBox{
+    height: 80%;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.buyBox button{
+    background-color: #fff;
+    width:25px;
+    height:17px;
+    border:none;
+    position:relative;
+}
+.trash{
+    width: 1rem !important;
+}
+.buyBox button img,.buyBox img{
+    width: 1.2rem;
+}
+.buyBox div{
+    display: flex;
+}
+.buyBox div span{
+    color: dodgerblue;
+}

@@ -1,0 +1,21 @@
+.image{
+    width: 200px;
+    margin:5px 20px;
+}
+.button{
+    user-select: none;
+    color: #2DD4BF;
+    font-size: 1em;
+    margin: 0.5rem 1em;
+    padding: 0.05em 0.2em;
+    border: 2px solid #2DD4BF;
+    border-radius: 3px;
+    background-color: #fff;
+}
+.button:hover{
+    background-color: #eee;
+}
+.button:active{
+    border: 1px solid #2DD4BF;
+    background-color: #cecece;
+}

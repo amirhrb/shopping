@@ -1,0 +1,69 @@
+.container{
+    width: 100%;
+    margin-top:100px; 
+    display:flex;
+    justify-content:space-around; 
+}
+.counter{
+    width:20%;
+    min-width: 80px;
+    height: 120px;
+    margin: 40px 10px auto 0;
+    border: 0.5px solid #cecece;
+}
+.itemsDiv{
+    width:80%;
+    max-width: 500px;
+    margin:20px 10px 20px 10px;
+    border-radius:3px;
+    text-align: center;
+}
+.counter button{
+    height: 1.5rem;
+    margin: auto 5px;
+    padding: 0.05rem 0.5rem;
+    position:relative;
+    background-color: #fff;
+    border: 2px solid #2DD4BF;
+    border-radius: 3px;
+    user-select: none;
+    box-sizing: border-box;
+    color: #2DD4BF;
+    font-weight: bolder;
+    transition: all 0.1s !important;
+}
+.counter button:active{
+    background-color: #cecece;
+}
+.clearBtn{
+    border: none !important;
+    color: tomato !important;
+    margin: auto 1px !important;
+}
+.clearBtn:active{
+    border: 2px solid tomato !important;
+}
+.payBtn:active{
+    border: none !important;
+}
+@media (max-width:640px) {
+    .container{
+        margin-top:70px;
+        display:flex;
+        flex-direction:column-reverse;
+        align-items: center;
+    }
+    .counter{
+        width:80%;
+        height: 70px;
+        margin: 40px 10px 0 10px;
+        padding: 10px;
+        border: 0.5px solid #cecece;
+    }
+    .itemsDiv{
+        width:80%;
+        margin:20px 10px 20px 10px;
+        padding: 10px;
+        border-radius:3px;
+    }
+}

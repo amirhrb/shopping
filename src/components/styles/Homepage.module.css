@@ -1,0 +1,18 @@
+.mainpart{
+    background-image: url("../../images/will-rust.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    min-height: 120%;
+    height: 120vh;
+    position: absolute;
+    padding-top: 60px;
+    margin-bottom: 0;
+    z-index: 2;
+}
+.centered{
+    position: relative;
+    top: 30px;
+    display: flex;
+    justify-content: center;
+}

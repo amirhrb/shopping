@@ -1,0 +1,26 @@
+.bag{
+    width:30px;
+    position:fixed;
+    right:15px;
+    top:65px;
+}
+.bag span{
+    width:18px;
+    height:20px;
+    position:fixed;
+    right:12px;
+    top:60px;
+    background:tomato;
+    color:#fff;
+    border-radius:50%;
+    text-align:center
+}
+@media (max-width:640px) {
+    .bag{
+        top:15px;
+        z-index: 9999;
+    }
+    .bag span{
+        top:10px;
+    }
+}

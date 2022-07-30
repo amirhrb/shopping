@@ -1,0 +1,28 @@
+.div{
+    margin-top: 80px;
+}
+.login{
+    user-select: none;
+    text-decoration: none;
+    color: #fff;
+    font-weight:bold;
+    margin: 10px;
+    padding: 2px 3px;
+    background-color: #2dd4bf;
+    border-radius: 3px;
+}
+.signup{
+    user-select: none;
+    text-decoration: none;
+    box-sizing: content-box;
+    color:  #2dd4bf;
+    font-weight:bold;
+    margin: 10px;
+    padding: 2px;
+    border:0.5px solid #2dd4bf;
+    background-color: rgba(255, 255, 255,0.1);
+    border-radius: 3px;
+}
+/* .div a, .div a:hover, .div a:active{
+    
+} */

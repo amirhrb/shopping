@@ -1,0 +1,76 @@
+.mainDiv{
+    width:200px;
+    padding: 10px;
+    border: 0.5px solid #cecece;
+    border-radius:3px;
+    margin:20px
+}
+.mainDiv h4{
+    height: 25px;
+    overflow:hidden;
+}
+.mainDiv a{
+    color: darkslategrey;
+}
+.mainDiv span{
+    user-select: none;
+    /* margin:5px 10px; */
+}
+.mainDiv img{
+    width:100%;
+}
+.mainDiv button{
+    
+}
+.mainDiv button:hover{
+    background-color: #eee;
+}
+.mainDiv button:active{
+    border: 2px solid #2DD4BF;
+    background-color: #cecece;
+}
+.buyBox{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.buyBox button{
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: auto 0.5rem;
+    position:relative;
+    background-color: #fff;
+    border:none;
+    border-radius: 50%;
+    user-select: none;
+    box-sizing: content-box;
+    color: #2DD4BF;
+    font-weight: bolder;
+}
+.buyBox span img{
+    margin: auto auto -5px auto;
+}
+.buyBox img{
+    width: 1.2rem;
+}
+.trash{
+    width: 1rem !important;
+}
+.trashBtn:active{
+    border: none !important;
+}
+.buyBtn{
+    width: fit-content !important;
+    padding: 0.05em 0.5em !important;
+    border: 2px solid #2DD4BF !important;
+    border-radius: 3px !important;
+}
+.minusBtn:active{
+    border: 2px solid tomato !important;
+}
+.buyBox div{
+    display: flex;
+}
+.buyBox div span{
+    color: dodgerblue;
+}
