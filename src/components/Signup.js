@@ -53,59 +53,58 @@ const Signup = () => {
       <form className={styles.form} onSubmit={SignUp}>
         <h1>Sign Up</h1>
         <br />
-        <label>Name</label>
+        <label className={styles.labels}>Name</label>
         <input
           type="text"
           name="name"
           value={data.name}
           onChange={Handler}
           onBlur={Focused}
+          placeholder="john"
         />
         {error.name && active.name && <span>{error.name}</span>}
-        <br />
-        <label>Email</label>
+        <label className={styles.labels}>Email</label>
         <input
           type="text"
           name="email"
           value={data.email}
           onChange={Handler}
           onBlur={Focused}
+          placeholder="example@email.com"
         />
         {error.email && active.email && <span>{error.email}</span>}
-        <br />
-        <label>Password</label>
+        <label className={styles.labels}>Password</label>
         <input
           type="password"
           name="password"
           value={data.password}
           onChange={Handler}
           onBlur={Focused}
+          placeholder="number, string,..."
         />
         {error.password && active.password && <span>{error.password}</span>}
-        <br />
-        <label>Confirm Password</label>
+        <label className={styles.labels}>Confirm Password</label>
         <input
           type="password"
           name="confirm"
           value={data.confirm}
           onChange={Handler}
+          placeholder="same as top ..."
           onBlur={Focused}
         />
         {error.confirm && active.confirm && <span>{error.confirm}</span>}
-        <br />
+
         <label>I accept all privacy policy & rules.</label>
-        <div style={{ position: "relative" }}>
-          <input
-            type="checkbox"
-            name="check"
-            value={data.check}
-            onChange={Handler}
-            onBlur={Focused}
-          />
-        </div>
+        <input
+          type="checkbox"
+          name="check"
+          value={data.check}
+          onChange={Handler}
+          onBlur={Focused}
+        />
+
         {error.check && active.check && <span>{error.check}</span>}
-        <br />
-        <br />
+
         <button type="submit">Sign Up</button>
         <Link to="/home/login">Login</Link>
       </form>
