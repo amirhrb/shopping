@@ -19,11 +19,27 @@ const Homepage = (props) => {
     <ParallaxBanner
       layers={[
         {
-          children: <img src={heroBg} alt="" className={styles.heroBg} />,
+          children: (
+            <img
+              src={heroBg}
+              alt=""
+              className={styles.heroBg}
+              style={{ display: "none" }}
+              onLoad={(e) => (e.target.style.display = "block")}
+            />
+          ),
           speed: -20,
         },
         {
-          children: <img src={hero} alt="" className={styles.hero} />,
+          children: (
+            <img
+              src={hero}
+              alt=""
+              className={styles.hero}
+              style={{ display: "none" }}
+              onLoad={(e) => (e.target.style.display = "block")}
+            />
+          ),
           speed: -10,
         },
       ]}
