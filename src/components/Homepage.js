@@ -52,7 +52,7 @@ const Homepage = (props) => {
     >
       <img
         src={heroBgDemo}
-        className={styles.heroBg}
+        className={styles.heroBgDemo}
         alt="hero bg man standing on mountain"
         style={{
           display: !isLoaded.hero && !isLoaded.heroBg ? "block" : "none",

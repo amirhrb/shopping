@@ -3,26 +3,29 @@
   min-height: 120%;
   height: 120vh;
   position: relative;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   padding-top: 60px;
   margin-bottom: 0;
   z-index: 2;
 }
+.heroBgDemo {
+  width: 100%;
+  position: absolute;
+}
 .heroBg {
+  height: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 100%;
+  object-position: 50% 50%;
+  object-fit: cover;
 }
 .hero {
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translate(-50%, 0);
-  min-width: 680px;
+  min-width: 760px;
   width: 100%;
   max-width: 960px;
 }
