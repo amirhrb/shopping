@@ -10,6 +10,11 @@
 .heroBgDemo {
   width: 100%;
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-position: 50% 50%;
+  object-fit: cover;
 }
 .heroBg {
   height: 100%;
@@ -27,7 +32,7 @@
   transform: translate(-50%, 0);
   min-width: 760px;
   width: 100%;
-  max-width: 960px;
+  max-width: 900px;
 }
 .centered {
   position: absolute;

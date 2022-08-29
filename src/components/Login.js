@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 
 import { validate } from "../helper/functions";
@@ -34,35 +35,41 @@ const Login = () => {
     setActive({ email: true, password: true });
   };
   return (
-    <div className={styles.cont}>
-      <form className={styles.form} onSubmit={Login}>
-        <h1>Login</h1>
-        <br />
-        <label>Email</label>
-        <input
-          type="text"
-          name="email"
-          value={data.email}
-          onChange={Handler}
-          onBlur={Focused}
-          placeholder="example@email.com"
-        />
-        {error.email && active.email && <span>{error.email}</span>}
-        <label>Password</label>
-        <input
-          type="password"
-          name="password"
-          value={data.password}
-          onChange={Handler}
-          onBlur={Focused}
-          placeholder="number, string,..."
-        />
-        {error.password && active.password && <span>{error.password}</span>}
+    <>
+      <Helmet>
+        <meta name="description" content="here you can Login!" />
+        <title>Login</title>
+      </Helmet>
+      <div className={styles.cont}>
+        <form className={styles.form} onSubmit={Login}>
+          <h1>Login</h1>
+          <br />
+          <label>Email</label>
+          <input
+            type="text"
+            name="email"
+            value={data.email}
+            onChange={Handler}
+            onBlur={Focused}
+            placeholder="example@email.com"
+          />
+          {error.email && active.email && <span>{error.email}</span>}
+          <label>Password</label>
+          <input
+            type="password"
+            name="password"
+            value={data.password}
+            onChange={Handler}
+            onBlur={Focused}
+            placeholder="number, string,..."
+          />
+          {error.password && active.password && <span>{error.password}</span>}
 
-        <button className={styles.loginBtn}>Login</button>
-        <Link to="/home/signup">Sign Up</Link>
-      </form>
-    </div>
+          <button className={styles.loginBtn}>Login</button>
+          <Link to="/home/signup">Sign Up</Link>
+        </form>
+      </div>
+    </>
   );
 };
 

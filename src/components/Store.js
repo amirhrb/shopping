@@ -14,6 +14,7 @@ import store from "../assets/icons/store.svg";
 
 //styles
 import styles from "../components/styles/Store.module.css";
+import { Helmet } from "react-helmet";
 
 const Div = styled.div`
   @media (min-width: 640px) {
@@ -31,6 +32,10 @@ const Products = () => {
 
   return (
     <>
+      <Helmet>
+        <meta name="description" content="here you can buy things!" />
+        <title>our Store</title>
+      </Helmet>
       <Div>
         <Link to="/store/cart" className={styles.bag}>
           <img src={store} alt="bag" />
