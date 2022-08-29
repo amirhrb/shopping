@@ -1,4 +1,4 @@
-import React, { Children } from "react";
+import React, { useState } from "react";
 import { Route, Switch } from "react-router-dom";
 import { ParallaxBanner } from "react-scroll-parallax";
 
@@ -11,10 +11,12 @@ import Login from "./Login";
 import Signup from "./Signup";
 
 //img
+import heroBgDemo from "../images/will-rust-demo.jpg";
 import heroBg from "../images/will-rust.jpg";
 import hero from "../images/will-rust.png";
 
 const Homepage = (props) => {
+  const [isLoaded, setLoaded] = useState({ hero: false, heroBg: false });
   return (
     <ParallaxBanner
       layers={[
@@ -24,8 +26,10 @@ const Homepage = (props) => {
               src={heroBg}
               alt=""
               className={styles.heroBg}
-              style={{ display: "none" }}
-              onLoad={(e) => (e.target.style.display = "block")}
+              style={{
+                display: isLoaded.hero && isLoaded.heroBg ? "block" : "none",
+              }}
+              onLoad={() => setLoaded({ ...isLoaded, hero: true })}
             />
           ),
           speed: -20,
@@ -34,16 +38,26 @@ const Homepage = (props) => {
           children: (
             <img
               src={hero}
-              alt=""
+              alt="hero bg man standing on mountain"
               className={styles.hero}
-              style={{ display: "none" }}
-              onLoad={(e) => (e.target.style.display = "block")}
+              style={{
+                display: isLoaded.hero && isLoaded.heroBg ? "block" : "none",
+              }}
+              onLoad={() => setLoaded({ ...isLoaded, heroBg: true })}
             />
           ),
           speed: -10,
         },
       ]}
     >
+      <img
+        src={heroBgDemo}
+        className={styles.heroBg}
+        alt="hero bg man standing on mountain"
+        style={{
+          display: !isLoaded.hero && !isLoaded.heroBg ? "block" : "none",
+        }}
+      />
       <div className={styles.mainpart}>
         <div className={styles.centered}>
           <Switch>
