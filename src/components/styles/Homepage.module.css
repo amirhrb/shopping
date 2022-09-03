@@ -29,9 +29,7 @@
   position: absolute;
   bottom: 0;
   left: 50%;
-  transform: translate(-50%, 0);
-  min-width: 955px;
-  width: 100%;
+  transform: translate(-50%, 25%) scale(0.5);
 }
 .centered {
   position: absolute;
