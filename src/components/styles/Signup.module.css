@@ -34,7 +34,7 @@ input[type="password"] {
   border: 0.4px solid rgb(221, 221, 221);
   transition: none;
 }
-::placeholder {
+input::placeholder {
   padding-left: 10px;
 }
 input[type="text"]:focus,
