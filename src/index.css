@@ -1,6 +1,4 @@
 * {
-  margin: 0;
-  padding: 0;
   transition: all 0.5s;
 }
 li {
@@ -10,6 +8,11 @@ a,
 a:hover,
 a:active {
   text-decoration: none;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 body {
   margin: 0;

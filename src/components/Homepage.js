@@ -31,15 +31,7 @@ const Homepage = (props) => {
         layers={[
           {
             children: (
-              <img
-                src={heroBg}
-                alt=""
-                className={styles.heroBg}
-                style={{
-                  display: isLoaded.hero && isLoaded.heroBg ? "block" : "none",
-                }}
-                onLoad={() => setLoaded({ ...isLoaded, hero: true })}
-              />
+              <img src={heroBg} alt="mountain" className={styles.heroBg} />
             ),
             speed: -20,
           },
@@ -49,24 +41,12 @@ const Homepage = (props) => {
                 src={hero}
                 alt="hero bg man standing on mountain"
                 className={styles.hero}
-                style={{
-                  display: isLoaded.hero && isLoaded.heroBg ? "block" : "none",
-                }}
-                onLoad={() => setLoaded({ ...isLoaded, heroBg: true })}
               />
             ),
             speed: -10,
           },
         ]}
       >
-        <img
-          src={heroBgDemo}
-          className={styles.heroBgDemo}
-          alt="hero bg man standing on mountain"
-          style={{
-            display: !isLoaded.hero && !isLoaded.heroBg ? "block" : "none",
-          }}
-        />
         <div className={styles.mainpart}>
           <div className={styles.centered}>
             <Switch>

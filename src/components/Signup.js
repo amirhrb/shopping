@@ -99,20 +99,23 @@ const Signup = () => {
             onBlur={Focused}
           />
           {error.confirm && active.confirm && <span>{error.confirm}</span>}
-
-          <label>I accept all privacy policy & rules.</label>
-          <input
-            type="checkbox"
-            name="check"
-            value={data.check}
-            onChange={Handler}
-            onBlur={Focused}
-          />
+          <div className={styles.checkboxCont}>
+            <input
+              type="checkbox"
+              name="check"
+              value={data.check}
+              onChange={Handler}
+              onBlur={Focused}
+            />
+            <label>I accept all privacy policy & rules.</label>
+          </div>
 
           {error.check && active.check && <span>{error.check}</span>}
 
           <button type="submit">Sign Up</button>
-          <Link to="/home/login">Login</Link>
+          <Link to="/home/login" className={styles.link}>
+            Login
+          </Link>
         </form>
       </div>
     </>

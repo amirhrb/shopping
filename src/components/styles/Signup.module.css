@@ -1,8 +1,8 @@
 .cont {
-  max-width: 250px;
+  max-width: 290px;
   width: 70%;
-  margin: 10px;
-  padding: 30px 20px 10px 20px;
+  margin-top: -15px;
+  padding: 20px 30px 20px 30px;
   background-color: rgba(240, 248, 255, 0.5);
   backdrop-filter: blur(4px);
   box-shadow: 0 8px 32px 0 rgba(163, 163, 163, 0.3);
@@ -66,4 +66,16 @@ input[type="password"]:focus-within {
 }
 .loginBtn {
   margin-top: 32px !important;
+}
+.checkboxCont {
+  margin: 5px 0;
+}
+.checkboxCont input {
+  margin: 5px 5px 0 0;
+}
+.link {
+  color: black !important;
+  font-size: small;
+  display: flex;
+  justify-content: center;
 }

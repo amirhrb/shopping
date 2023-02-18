@@ -43,7 +43,6 @@ const Login = () => {
       <div className={styles.cont}>
         <form className={styles.form} onSubmit={Login}>
           <h1>Login</h1>
-          <br />
           <label>Email</label>
           <input
             type="text"
@@ -66,7 +65,9 @@ const Login = () => {
           {error.password && active.password && <span>{error.password}</span>}
 
           <button className={styles.loginBtn}>Login</button>
-          <Link to="/home/signup">Sign Up</Link>
+          <Link to="/home/signup" className={styles.link}>
+            Sign Up
+          </Link>
         </form>
       </div>
     </>

@@ -1,5 +1,7 @@
 import { Redirect, Route, Switch } from "react-router-dom";
 
+import "./App.css";
+
 //components
 import Navbar from "./components/Navbar";
 import Homepage from "./components/Homepage";
@@ -20,14 +22,16 @@ const App = () => {
         <ScrollProvider>
           <div className="App">
             <Navbar />
-            <Switch>
-              <Route path="/store/details/:id" component={Details} />
-              <Route path="/store/cart" component={Cart} />
-              <Route path="/store" component={Store} />
-              <Route path="/info" component={Info} />
-              <Route path="/home" component={Homepage} />
-              <Redirect from="/*" to="/home" />
-            </Switch>
+            <main className="container">
+              <Switch>
+                <Route path="/store/details/:id" component={Details} />
+                <Route path="/store/cart" component={Cart} />
+                <Route path="/store" component={Store} />
+                <Route path="/info" component={Info} />
+                <Route path="/home" component={Homepage} />
+                <Redirect from="/*" to="/home" />
+              </Switch>
+            </main>
           </div>
         </ScrollProvider>
       </CartProvider>
