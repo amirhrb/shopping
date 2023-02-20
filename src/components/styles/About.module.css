@@ -1,0 +1,63 @@
+.container {
+  width: 100%;
+  position: relative;
+  min-height: calc(100vh - 60px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  background: linear-gradient(30deg, #e5e5e5, #eeeeee, #cecece);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 600px;
+  height: calc((100vh - 60px) / 1.3);
+  max-height: 600px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.boxContent {
+  width: 90%;
+  height: 90%;
+  padding: 0;
+  margin: 15px;
+  box-sizing: content-box;
+}
+.boxContent h1 {
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+.shapes {
+  background-color: aquamarine;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 150vw;
+  height: 50vh;
+}
+.listflex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.list li {
+  margin: 5px 0;
+  list-style: circle;
+}
+.list {
+  flex-grow: 1.5;
+}
+.logosContainer {
+  flex-grow: 1;
+}
+.helmet {
+  width: 100%;
+  max-width: 200px;
+}

@@ -5,7 +5,7 @@ import "./App.css";
 //components
 import Navbar from "./components/Navbar";
 import Homepage from "./components/Homepage";
-import Info from "./components/Info";
+import About from "./components/About";
 import Store from "./components/Store";
 import Details from "./components/shared/Details";
 import Cart from "./components/Cart";
@@ -27,7 +27,7 @@ const App = () => {
                 <Route path="/store/details/:id" component={Details} />
                 <Route path="/store/cart" component={Cart} />
                 <Route path="/store" component={Store} />
-                <Route path="/info" component={Info} />
+                <Route path="/info" component={About} />
                 <Route path="/home" component={Homepage} />
                 <Redirect from="/*" to="/home" />
               </Switch>
