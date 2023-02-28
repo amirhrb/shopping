@@ -1,6 +1,9 @@
 * {
   transition: all 0.5s;
 }
+::-webkit-scrollbar {
+  display: none;
+}
 li {
   list-style: none;
 }

@@ -1,5 +1,7 @@
 .itemDiv {
-  border: 0.5px solid #cecece;
+  min-height: 75px;
+  background: linear-gradient(30deg, #e5e5e5, #eeeeee, #cecece);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
   border-radius: 3px;
   margin: 20px 0px;
   display: flex;
@@ -9,42 +11,17 @@
 .itemDiv a {
   width: fit-content;
 }
-.itemDiv img {
-  width: 70px;
+.itemImage {
+  height: 70px;
 }
 @media (max-width: 640px) {
   .itemDiv {
     width: 100%;
   }
-  .itemDiv img {
+  .itemImage {
     width: 55px;
   }
 }
-.buyBox {
-  height: 80%;
+.title h4 {
   margin: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-.buyBox button {
-  background-color: #fff;
-  width: 25px;
-  height: 17px;
-  border: none;
-  position: relative;
-}
-.trash {
-  width: 1rem !important;
-}
-.buyBox button img,
-.buyBox img {
-  width: 1.2rem;
-}
-.buyBox div {
-  display: flex;
-}
-.buyBox div span {
-  color: dodgerblue;
 }

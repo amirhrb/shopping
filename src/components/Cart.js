@@ -19,20 +19,10 @@ import back from "../assets/icons/back.svg";
 
 const Cart = () => {
   const { state, dispatch } = useContext(CartContext);
-  // console.log(state)
   return (
     <div className={styles.container}>
       <Link to="/store">
-        <img
-          src={back}
-          alt="bag"
-          style={{
-            width: "25px",
-            position: "fixed",
-            right: "10px",
-            top: "65px",
-          }}
-        />
+        <img src={back} alt="bag" className={styles.backBtn} />
       </Link>
 
       <div className={styles.itemsDiv}>
@@ -66,7 +56,7 @@ const Cart = () => {
             </button>
           </div>
         ) : (
-          <p>empty</p>
+          <p>buy first!</p>
         )}
       </div>
     </div>

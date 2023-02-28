@@ -12,14 +12,13 @@ import Login from "./Login";
 import Signup from "./Signup";
 
 //img
-import heroBgDemo from "../images/will-rust-demo.jpg";
+// import heroBgDemo from "../images/will-rust-demo.jpg";
 import heroBg from "../images/will-rust.jpg";
 import hero from "../images/will-rust.png";
 
 const Homepage = (props) => {
-  const [isLoaded, setLoaded] = useState({ hero: false, heroBg: false });
   return (
-    <>
+    <main>
       <Helmet>
         <meta
           name="description"
@@ -63,7 +62,7 @@ const Homepage = (props) => {
           </div>
         </div>
       </ParallaxBanner>
-    </>
+    </main>
   );
 };
 

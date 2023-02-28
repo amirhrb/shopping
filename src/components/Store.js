@@ -34,19 +34,21 @@ const Products = () => {
     <>
       <Helmet>
         <meta name="description" content="here you can buy things!" />
-        <title>our Store</title>
+        <title>Store | shop here</title>
       </Helmet>
-      <Div>
-        <Link to="/store/cart" className={styles.bag}>
-          <img src={store} alt="bag" />
-          {state.inCartItems.length ? <span>{state.countItems}</span> : ""}
-        </Link>
-        {data.length ? (
-          data.map((item) => <Product data={item} key={item.id} />)
-        ) : (
-          <p>Loading...</p>
-        )}
-      </Div>
+      <main style={{ marginTop: "60px" }}>
+        <Div>
+          <Link to="/store/cart" className={styles.bag}>
+            <img src={store} alt="bag" />
+            {state.inCartItems.length ? <span>{state.countItems}</span> : ""}
+          </Link>
+          {data.length ? (
+            data.map((item) => <Product data={item} key={item.id} />)
+          ) : (
+            <p>Loading...</p>
+          )}
+        </Div>
+      </main>
     </>
   );
 };

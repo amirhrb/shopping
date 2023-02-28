@@ -1,26 +1,46 @@
-.bag{
-    width:30px;
-    position:fixed;
-    right:15px;
-    top:65px;
+.bag {
+  width: 30px;
+  position: fixed;
+  right: 20px;
+  top: 70px;
 }
-.bag span{
-    width:18px;
-    height:20px;
-    position:fixed;
-    right:12px;
-    top:60px;
-    background:tomato;
-    color:#fff;
-    border-radius:50%;
-    text-align:center
+.bag span {
+  width: 20px;
+  height: 20px;
+  position: fixed;
+  right: 15px;
+  top: 65px;
+  background: tomato;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  z-index: 2;
 }
-@media (max-width:640px) {
-    .bag{
-        top:15px;
-        z-index: 9999;
-    }
-    .bag span{
-        top:10px;
-    }
+.bag span:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  z-index: 1;
+  background-color: rgba(255, 99, 71, 0.37);
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+@keyframes ping {
+  75%,
+  100% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+@media (max-width: 640px) {
+  .bag {
+    top: 15px;
+    z-index: 9999;
+  }
+  .bag span {
+    top: 10px;
+  }
 }

@@ -22,16 +22,14 @@ const App = () => {
         <ScrollProvider>
           <div className="App">
             <Navbar />
-            <main className="container">
-              <Switch>
-                <Route path="/store/details/:id" component={Details} />
-                <Route path="/store/cart" component={Cart} />
-                <Route path="/store" component={Store} />
-                <Route path="/info" component={About} />
-                <Route path="/home" component={Homepage} />
-                <Redirect from="/*" to="/home" />
-              </Switch>
-            </main>
+            <Switch>
+              <Route path="/store/details/:id" component={Details} />
+              <Route path="/store/cart" component={Cart} />
+              <Route path="/store" component={Store} />
+              <Route path="/info" component={About} />
+              <Route path="/home" component={Homepage} />
+              <Redirect from="/*" to="/home" />
+            </Switch>
           </div>
         </ScrollProvider>
       </CartProvider>

@@ -1,69 +1,86 @@
-.container{
-    width: 100%;
-    margin-top:100px; 
-    display:flex;
-    justify-content:space-around; 
+.container {
+  width: 100%;
+  margin-top: 60px;
+  min-height: calc(100vh - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
-.counter{
-    width:20%;
-    min-width: 80px;
-    height: 120px;
-    margin: 40px 10px auto 0;
+.backBtn {
+  width: 15px;
+  padding: 10px;
+  background-color: #ebebeb;
+  border-radius: 50%;
+  position: fixed;
+  right: 15px;
+  top: 70px;
+}
+.counter {
+  width: 20%;
+  min-width: 80px;
+  height: 120px;
+  box-shadow: 0px 0px 15px 0px rgba(157, 157, 157, 0.5);
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+}
+.backBtn:hover {
+  background-color: #cecece;
+}
+.itemsDiv {
+  width: 80%;
+  max-width: 500px;
+  margin: 20px 10px 20px 10px;
+  border-radius: 3px;
+  text-align: center;
+}
+.counter button {
+  height: 1.5rem;
+  margin: auto 5px;
+  padding: 0.05rem 0.5rem;
+  position: relative;
+  background-color: #fff;
+  border: 2px solid #2dd4bf;
+  border-radius: 3px;
+  user-select: none;
+  box-sizing: border-box;
+  color: #2dd4bf;
+  font-weight: bolder;
+  transition: all 0.1s !important;
+}
+.counter button:active {
+  background-color: #cecece;
+}
+.clearBtn {
+  border: none !important;
+  color: tomato !important;
+  margin: auto 1px !important;
+}
+.clearBtn:active {
+  border: 2px solid tomato !important;
+}
+.payBtn:active {
+  border: none !important;
+}
+@media (max-width: 640px) {
+  .container {
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .counter {
+    width: 80%;
+    height: 70px;
+    margin: 40px 10px 0 10px;
+    padding: 10px;
     border: 0.5px solid #cecece;
-}
-.itemsDiv{
-    width:80%;
-    max-width: 500px;
-    margin:20px 10px 20px 10px;
-    border-radius:3px;
-    text-align: center;
-}
-.counter button{
-    height: 1.5rem;
-    margin: auto 5px;
-    padding: 0.05rem 0.5rem;
-    position:relative;
-    background-color: #fff;
-    border: 2px solid #2DD4BF;
+  }
+  .itemsDiv {
+    width: 80%;
+    margin: 20px 10px 20px 10px;
+    padding: 10px;
     border-radius: 3px;
-    user-select: none;
-    box-sizing: border-box;
-    color: #2DD4BF;
-    font-weight: bolder;
-    transition: all 0.1s !important;
-}
-.counter button:active{
-    background-color: #cecece;
-}
-.clearBtn{
-    border: none !important;
-    color: tomato !important;
-    margin: auto 1px !important;
-}
-.clearBtn:active{
-    border: 2px solid tomato !important;
-}
-.payBtn:active{
-    border: none !important;
-}
-@media (max-width:640px) {
-    .container{
-        margin-top:70px;
-        display:flex;
-        flex-direction:column-reverse;
-        align-items: center;
-    }
-    .counter{
-        width:80%;
-        height: 70px;
-        margin: 40px 10px 0 10px;
-        padding: 10px;
-        border: 0.5px solid #cecece;
-    }
-    .itemsDiv{
-        width:80%;
-        margin:20px 10px 20px 10px;
-        padding: 10px;
-        border-radius:3px;
-    }
+  }
 }

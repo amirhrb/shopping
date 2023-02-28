@@ -1,0 +1,44 @@
+.buyBox {
+  max-width: 200px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.buyBox button {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin: auto 0.5rem;
+  position: relative;
+  background-color: inherit;
+  border: none;
+  border-radius: 50%;
+  user-select: none;
+  box-sizing: content-box;
+  color: #2dd4bf;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.buyBox span img {
+  margin: auto auto -5px auto;
+}
+.buyBox img {
+  width: 1.2rem;
+}
+.trash {
+  width: 1rem !important;
+}
+.trashBtn:active {
+  border: none !important;
+}
+.buyBtn {
+  width: fit-content !important;
+  padding: 0.05em 0.5em !important;
+  border: 2px solid #2dd4bf !important;
+  border-radius: 3px !important;
+}
+.buyBox div {
+  display: flex;
+}
+.buyBox div span {
+  color: dodgerblue;
+}

@@ -1,8 +1,10 @@
 .mainDiv {
   width: 200px;
   padding: 10px;
+  /* background: linear-gradient(30deg, #e5e5e5, #eeeeee, #e4e4e4); */
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
   border: 0.5px solid #cecece;
-  border-radius: 3px;
+  border-radius: 15px;
   margin: 20px;
 }
 .mainDiv h4 {
@@ -19,57 +21,4 @@
 .mainDiv img {
   max-width: 100%;
   max-height: 100%;
-}
-
-.mainDiv button:hover {
-  background-color: #eee;
-}
-.mainDiv button:active {
-  border: 2px solid #2dd4bf;
-  background-color: #cecece;
-}
-.buyBox {
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
-}
-.buyBox button {
-  width: 1.2rem;
-  height: 1.2rem;
-  margin: auto 0.5rem;
-  position: relative;
-  background-color: #fff;
-  border: none;
-  border-radius: 50%;
-  user-select: none;
-  box-sizing: content-box;
-  color: #2dd4bf;
-  font-weight: bolder;
-}
-.buyBox span img {
-  margin: auto auto -5px auto;
-}
-.buyBox img {
-  width: 1.2rem;
-}
-.trash {
-  width: 1rem !important;
-}
-.trashBtn:active {
-  border: none !important;
-}
-.buyBtn {
-  width: fit-content !important;
-  padding: 0.05em 0.5em !important;
-  border: 2px solid #2dd4bf !important;
-  border-radius: 3px !important;
-}
-.minusBtn:active {
-  border: 2px solid tomato !important;
-}
-.buyBox div {
-  display: flex;
-}
-.buyBox div span {
-  color: dodgerblue;
 }
