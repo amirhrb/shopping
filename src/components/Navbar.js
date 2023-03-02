@@ -36,6 +36,8 @@ const Nav = styled.div`
   }
 `;
 const Ul = styled.ul`
+  font-weight: bold;
+  font-size: large;
   @media (min-width: 640px) {
     width: 100%;
     height: 60px;
@@ -51,8 +53,6 @@ const Ul = styled.ul`
     position: absolute;
     top: 0;
     left: 0;
-    font-weight: bold;
-    font-size: large;
     div {
       width: 75%;
       max-width: 640px;
