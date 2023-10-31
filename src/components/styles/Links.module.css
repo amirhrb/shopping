@@ -12,8 +12,9 @@
   border-radius: 3px;
 }
 .signup {
-  margin: auto 10px;
+  margin: auto 8px;
   padding: 0.5rem;
+  white-space: nowrap;
   outline: 0.2px solid;
   box-sizing: border-box;
   background-color: rgba(255, 255, 255, 0.1);
